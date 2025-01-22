@@ -1,0 +1,2 @@
+﻿CREATE USER [LWTest] FOR LOGIN [LWTest];
+

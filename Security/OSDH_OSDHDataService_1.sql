@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [OSDH\OSDHDataService]
+    FROM WINDOWS WITH DEFAULT_DATABASE = [LabWare_Test_Data], DEFAULT_LANGUAGE = [us_english];
+

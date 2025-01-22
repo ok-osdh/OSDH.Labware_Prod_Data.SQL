@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [OSDH\DerekP]
+    FROM WINDOWS WITH DEFAULT_DATABASE = [LabWare_Prod_Data], DEFAULT_LANGUAGE = [us_english];
+

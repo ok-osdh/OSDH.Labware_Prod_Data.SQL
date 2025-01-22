@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [OSDH\WendyZ]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

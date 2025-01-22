@@ -1,0 +1,2 @@
+﻿CREATE USER [LIMSVendors-G] FOR LOGIN [OSDH\LIMSVendors-G];
+

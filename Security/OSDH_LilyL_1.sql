@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [OSDH\LilyL]
+    FROM WINDOWS WITH DEFAULT_DATABASE = [LabWare_Test], DEFAULT_LANGUAGE = [us_english];
+

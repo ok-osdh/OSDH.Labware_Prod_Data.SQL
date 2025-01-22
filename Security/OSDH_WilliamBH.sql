@@ -1,0 +1,2 @@
+﻿CREATE USER [OSDH\WilliamBH] FOR LOGIN [OSDH\WilliamBH];
+

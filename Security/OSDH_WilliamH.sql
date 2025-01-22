@@ -1,0 +1,3 @@
+﻿CREATE USER [OSDH\WilliamH] FOR LOGIN [OSDH\WilliamH]
+    WITH DEFAULT_SCHEMA = [OSDH\WilliamH];
+

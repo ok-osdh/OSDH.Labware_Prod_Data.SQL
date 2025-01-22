@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [OSDH\WilliamH]
+    AUTHORIZATION [OSDH\WilliamH];
+

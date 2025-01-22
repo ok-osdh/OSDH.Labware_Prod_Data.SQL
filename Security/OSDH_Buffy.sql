@@ -1,0 +1,2 @@
+﻿CREATE USER [OSDH\Buffy] FOR LOGIN [OSDH\Buffy];
+

@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[SeaBoard_Demos] (
+    [EE#]              FLOAT (53)     NULL,
+    [First Name]       NVARCHAR (255) NULL,
+    [Middle Name]      NVARCHAR (255) NULL,
+    [Last Name]        NVARCHAR (255) NULL,
+    [Suffix]           NVARCHAR (255) NULL,
+    [Age]              FLOAT (53)     NULL,
+    [DOB (mm/dd/yyyy)] DATETIME       NULL,
+    [Street Address]   NVARCHAR (255) NULL,
+    [City]             NVARCHAR (255) NULL,
+    [State]            NVARCHAR (255) NULL,
+    [Zip]              FLOAT (53)     NULL,
+    [HomePhone]        FLOAT (53)     NULL,
+    [CellPhone]        FLOAT (53)     NULL,
+    [Sex]              NVARCHAR (255) NULL,
+    [Country of Birth] FLOAT (53)     NULL,
+    [Primary Language] FLOAT (53)     NULL,
+    [Hispanic]         FLOAT (53)     NULL,
+    [Race]             FLOAT (53)     NULL,
+    [Marital Status]   FLOAT (53)     NULL,
+    [Email]            NVARCHAR (255) NULL,
+    [unique_id]        NVARCHAR (255) NULL,
+    [Reported]         BIT            CONSTRAINT [DF_SeaBoard_Demos_Reported] DEFAULT ((0)) NULL
+);
+

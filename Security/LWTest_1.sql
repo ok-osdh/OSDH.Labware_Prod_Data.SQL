@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [LWTest]
+    WITH PASSWORD = N'vd|<vi<rcisobrgweod+#YqamsFT7_&#$!~<liryyaLzoks}', SID = 0x256232D0AC3B474682BF4FE2CE46E62E, DEFAULT_DATABASE = [LabWare_Prod], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

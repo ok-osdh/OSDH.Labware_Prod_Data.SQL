@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [AGENCY\MediatorApiStaging]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

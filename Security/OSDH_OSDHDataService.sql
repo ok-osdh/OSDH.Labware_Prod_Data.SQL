@@ -1,0 +1,2 @@
+﻿CREATE USER [OSDH\OSDHDataService] FOR LOGIN [OSDH\OSDHDataService];
+

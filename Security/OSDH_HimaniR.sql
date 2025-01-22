@@ -1,0 +1,2 @@
+﻿CREATE USER [OSDH\HimaniR] FOR LOGIN [OSDH\HimaniR];
+

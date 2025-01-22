@@ -1,0 +1,2 @@
+﻿CREATE USER [OSDH\DerekP] FOR LOGIN [OSDH\DerekP];
+

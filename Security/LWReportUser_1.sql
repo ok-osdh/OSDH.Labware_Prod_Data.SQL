@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [LWReportUser]
+    WITH PASSWORD = N'vdvdifci4sQ0o@brgOweod#qmsFT7_&#$!~<6ali<rynzoks', SID = 0x76C4DD3BF0F82E488B7525B12E956C2F, DEFAULT_DATABASE = [LabWare_Test], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

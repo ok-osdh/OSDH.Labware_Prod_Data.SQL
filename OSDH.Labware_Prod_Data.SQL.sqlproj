@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>OSDH.Labware_Prod_Data.SQL</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{1ae63eac-9951-4161-a141-a1a8976d5344}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>OSDH.Labware_Prod_Data.SQL</RootNamespace>
+    <AssemblyName>OSDH.Labware_Prod_Data.SQL</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\RESULTSLOG.sql" />
+    <Build Include="dbo\Tables\REPORTS.sql" />
+    <Build Include="dbo\Tables\REPORT_OBJECTS.sql" />
+    <Build Include="dbo\Tables\RESULT.sql" />
+    <Build Include="dbo\Tables\SAMPLE.sql" />
+    <Build Include="dbo\Tables\PRACTITIONER.sql" />
+    <Build Include="dbo\Tables\PATIENT.sql" />
+    <Build Include="dbo\Tables\CUSTOMER.sql" />
+    <Build Include="dbo\Tables\SAMPLE_Temp.sql" />
+    <Build Include="dbo\Tables\MPI Extract 3.sql" />
+    <Build Include="dbo\Tables\COMPONENT.sql" />
+    <Build Include="dbo\Tables\ANALYSIS.sql" />
+    <Build Include="dbo\Tables\TEST.sql" />
+    <Build Include="dbo\Tables\OK_DiagnosisCodes.sql" />
+    <Build Include="dbo\Tables\pmlTemp1.sql" />
+    <Build Include="dbo\Tables\SUBMISSIONS.sql" />
+    <Build Include="dbo\Tables\SeaBoard_Demos.sql" />
+    <Build Include="dbo\Tables\SeaBoard_Test.sql" />
+    <Build Include="dbo\Tables\pmlTemp.sql" />
+    <Build Include="dbo\Tables\pmlTemp2.sql" />
+    <Build Include="dbo\Tables\OK_MedicaidLabBillingRates.sql" />
+    <Build Include="dbo\Views\LatestReportObject.sql" />
+    <Build Include="dbo\Views\ENTview.sql" />
+    <Build Include="dbo\Views\VIRview.sql" />
+    <Build Include="dbo\Views\APview.sql" />
+    <Build Include="dbo\Views\MICROview.sql" />
+    <Build Include="dbo\Views\TestResult.sql" />
+    <Build Include="dbo\Views\FLUview.sql" />
+    <Build Include="dbo\Views\BACview.sql" />
+    <Build Include="dbo\Views\MICRO_TestResult.sql" />
+    <Build Include="dbo\Views\GCView.sql" />
+    <Build Include="dbo\Views\BaseView.sql" />
+    <Build Include="dbo\Views\COVID-19view.sql" />
+    <Build Include="dbo\Views\TBview.sql" />
+    <Build Include="dbo\Views\HIVview.sql" />
+    <Build Include="dbo\Views\SERview.sql" />
+    <Build Include="dbo\Views\HEPview.sql" />
+    <Build Include="dbo\Views\TB-HIVview.sql" />
+    <Build Include="Security\db_executor.sql" />
+    <Build Include="Security\OSDH_WilliamH.sql" />
+    <Build Include="Security\OSDH_WilliamH_1.sql" />
+    <Build Include="Security\OSDH_LilyL.sql" />
+    <Build Include="Security\OSDH_LilyL_1.sql" />
+    <Build Include="Security\phocisapp.sql" />
+    <Build Include="Security\phocisapp_1.sql" />
+    <Build Include="Security\LWReportUser.sql" />
+    <Build Include="Security\LWReportUser_1.sql" />
+    <Build Include="Security\LIMSVendors-G.sql" />
+    <Build Include="Security\OSDH_LIMSVendors-G.sql" />
+    <Build Include="Security\OSDH_LITS-GC-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-GC-SQL_1.sql" />
+    <Build Include="Security\LWTest.sql" />
+    <Build Include="Security\LWTest_1.sql" />
+    <Build Include="Security\LabWareDBUser.sql" />
+    <Build Include="Security\LabWareDBUser_1.sql" />
+    <Build Include="Security\OSDH_OSDHDataService.sql" />
+    <Build Include="Security\OSDH_OSDHDataService_1.sql" />
+    <Build Include="Security\OSDH_LITS-EPI-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-EPI-SQL_1.sql" />
+    <Build Include="Security\AGENCY_OSDH LIMSsc.sql" />
+    <Build Include="Security\AGENCY_OSDH LIMSsc_1.sql" />
+    <Build Include="Security\OSDH_WendyZ.sql" />
+    <Build Include="Security\OSDH_WendyZ_1.sql" />
+    <Build Include="Security\OSDH_LITS-AP-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-AP-SQL_1.sql" />
+    <Build Include="Security\OSDH_LITS-BAC-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-BAC-SQL_1.sql" />
+    <Build Include="Security\OSDH_LITS-ENT-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-ENT-SQL_1.sql" />
+    <Build Include="Security\OSDH_LITS-FLU-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-FLU-SQL_1.sql" />
+    <Build Include="Security\OSDH_LITS-HEP-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-HEP-SQL_1.sql" />
+    <Build Include="Security\OSDH_LITS-HIV-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-HIV-SQL_1.sql" />
+    <Build Include="Security\OSDH_LITS-SER-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-SER-SQL_1.sql" />
+    <Build Include="Security\OSDH_LITS-TB-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-TB-SQL_1.sql" />
+    <Build Include="Security\OSDH_LITS-VR-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-VR-SQL_1.sql" />
+    <Build Include="Security\OSDH_LIMSPHLAdmins-G.sql" />
+    <Build Include="Security\OSDH_LIMSPHLADMINS-G_1.sql" />
+    <Build Include="Security\OSDH_MatthewE.sql" />
+    <Build Include="Security\OSDH_anthonyl.sql" />
+    <Build Include="Security\OSDH_AnthonyL_1.sql" />
+    <Build Include="Security\AGENCY_124901.sql" />
+    <Build Include="Security\AGENCY_124901_1.sql" />
+    <Build Include="Security\OSDH_ChristieM.sql" />
+    <Build Include="Security\OSDH_ChristieM_1.sql" />
+    <Build Include="Security\AGENCY_278235.sql" />
+    <Build Include="Security\AGENCY_278235_1.sql" />
+    <Build Include="Security\AGENCY_MediatorApiStaging.sql" />
+    <Build Include="Security\AGENCY_MediatorApiStaging_1.sql" />
+    <Build Include="Security\AGENCY_141714.sql" />
+    <Build Include="Security\AGENCY_141714_1.sql" />
+    <Build Include="Security\OSDH_LITS-COVID-SQL.sql" />
+    <Build Include="Security\OSDH_LITS-COVID-SQL_1.sql" />
+    <Build Include="Security\OSDH_EvarenP.sql" />
+    <Build Include="Security\OSDH_EvarenP_1.sql" />
+    <Build Include="Security\OSDH_HimaniR.sql" />
+    <Build Include="Security\OSDH_HimaniR_1.sql" />
+    <Build Include="Security\OSDH_WilliamBH.sql" />
+    <Build Include="Security\OSDH_WilliamBH_1.sql" />
+    <Build Include="Security\OSDH_DerekP.sql" />
+    <Build Include="Security\OSDH_DerekP_1.sql" />
+    <Build Include="Security\OSDH_Buffy.sql" />
+    <Build Include="Security\OSDH_Buffy_1.sql" />
+    <Build Include="Security\AGENCY_117323.sql" />
+    <Build Include="Security\AGENCY_117323_1.sql" />
+    <Build Include="Security\OSDH_yiz.sql" />
+    <Build Include="Security\OSDH_yiz_1.sql" />
+    <Build Include="Security\AGENCY_MediatorApiProductio.sql" />
+    <Build Include="Security\AGENCY_MediatorApiProductio_1.sql" />
+    <Build Include="Security\AGENCY_143452.sql" />
+    <Build Include="Security\AGENCY_143452_1.sql" />
+    <Build Include="Security\AGENCY_dcorderman.sql" />
+    <Build Include="Security\AGENCY_dcorderman_1.sql" />
+    <Build Include="Security\AGENCY_320757.sql" />
+    <Build Include="Security\AGENCY_320757_1.sql" />
+    <Build Include="Security\AGENCY_OSDH_LIMSSC02.sql" />
+    <Build Include="Security\AGENCY_OSDH_LIMSSC02_1.sql" />
+    <Build Include="Security\OSDH_LIMSPHLADMINS-L.sql" />
+    <Build Include="Security\OSDH_LIMSPHLADMINS-L_1.sql" />
+    <Build Include="Security\AGENCY_364813.sql" />
+    <Build Include="Security\AGENCY_364813_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\pml_GetLabWareMedicaidBilling.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LabWare_GetClientReportByReptNum.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LabWare_SaveResultsLog.sql" />
+    <Build Include="dbo\Stored Procedures\GetLabResultsRecords.sql" />
+    <Build Include="dbo\Stored Procedures\spGetCustomerInfoFromLabware.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetClinicPractitionersFromLabWare.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LabWare_GetClientReportsbyClientID.sql" />
+    <Build Include="dbo\Stored Procedures\LilyL_GetLabWareMedicaidBilling.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LabWare_GetLabReportsByDateByClinic.sql" />
+    <Build Include="dbo\Stored Procedures\pml_LabWare_LabDataUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\okSp_GetCountyLabShippingManifestRpt.sql" />
+    <Build Include="dbo\Stored Procedures\sp_FHIR_eMPI_PatientData.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LabWare_LabDataUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\Bills_SearchAllTables.sql" />
+    <Build Include="dbo\Stored Procedures\okSP_GetLabWareMedicaidBilling.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LabWare_LabDataFlash.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LabWare_LabDataImport.sql" />
+    <Build Include="dbo\Stored Procedures\GetLabReportsByDateAndCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\usp_LabWare_LabDataCreatTables.sql" />
+    <Build Include="dbo\Stored Procedures\okSP_GetLabWareMedicaidBilling_ExcludingClinicsFromTable.sql" />
+    <Build Include="dbo\Stored Procedures\okSP_GetLabWareMedicaidBilling_ExcludingClinics.sql" />
+    <Build Include="dbo\Stored Procedures\GetLabManifestItems.sql" />
+    <Build Include="Security\LWReportUser_2.sql" />
+    <Build Include="Security\OSDH_LilyL_2.sql" />
+    <Build Include="Security\OSDH_LIMSPHLADMINS-L_2.sql" />
+    <Build Include="Security\OSDH_WilliamH_2.sql" />
+    <Build Include="Security\Permissions.sql" />
+  </ItemGroup>
+</Project>

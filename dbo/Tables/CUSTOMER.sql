@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[CUSTOMER] (
+    [NAME]            VARCHAR (30) NOT NULL,
+    [REMOVED]         VARCHAR (1)  NULL,
+    [COMPANY_NAME]    VARCHAR (78) NULL,
+    [X_CUSTOMER_TYPE] VARCHAR (20) NULL,
+    [ADDRESS1]        VARCHAR (78) NULL,
+    [ADDRESS2]        VARCHAR (78) NULL,
+    [X_CITY]          VARCHAR (30) NULL,
+    [X_STATE]         VARCHAR (20) NULL,
+    [X_ZIPCODE]       VARCHAR (10) NULL,
+    [X_COUNTY]        VARCHAR (20) NULL,
+    [PHONE_NUM]       VARCHAR (78) NULL,
+    [FAX_NUM]         VARCHAR (78) NULL,
+    [ACTIVE]          VARCHAR (1)  NULL,
+    [X_NPI]           VARCHAR (10) NULL,
+    [Z_PHOCIS_ID]     VARCHAR (20) NULL,
+    [Z_PHIDDO_ID]     VARCHAR (20) NULL,
+    [CHANGED_ON]      DATETIME     NULL,
+    CONSTRAINT [PK_CUSTOMER] PRIMARY KEY NONCLUSTERED ([NAME] ASC)
+);
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[CUSTOMER] TO [AGENCY\MediatorApiStaging]
+    AS [dbo];
+

@@ -1,0 +1,2 @@
+﻿CREATE USER [OSDH\yiz] FOR LOGIN [OSDH\yiz];
+

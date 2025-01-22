@@ -1,0 +1,2 @@
+﻿CREATE USER [OSDH\EvarenP] FOR LOGIN [OSDH\EvarenP];
+
