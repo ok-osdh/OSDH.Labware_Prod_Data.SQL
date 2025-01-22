@@ -219,5 +219,9 @@
     <Build Include="Security\OSDH_LIMSPHLADMINS-L_2.sql" />
     <Build Include="Security\OSDH_WilliamH_2.sql" />
     <Build Include="Security\Permissions.sql" />
+    <Build Include="dbo\GetLabManifestItems8.sql" />
+    <Build Include="dbo\GetLabResultsRecords8.sql" />
+    <Build Include="dbo\Stored Procedures\spGetCustomerInfoFromLabware8.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetClinicPractitionersFromLabware8.sql" />
   </ItemGroup>
 </Project>
