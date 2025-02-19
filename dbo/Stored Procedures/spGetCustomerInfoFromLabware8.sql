@@ -41,5 +41,5 @@ SELECT COMPANY_NAME, ADDRESS1, T_CITY, T_STATE, T_COUNTY,  T_ZIPCODE, PHONE_NUM,
 GO
 GRANT EXECUTE
     ON OBJECT::[phocis].[spGetCustomerInfoFromLabware8] TO [phocisapp]
-    AS [phocis];
+GO
 

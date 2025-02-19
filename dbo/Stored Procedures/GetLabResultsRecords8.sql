@@ -1,7 +1,7 @@
 ﻿
 /******************************************************************************
-**		File: dbo.GetLabResultsRecords.sql
-**		Name: dbo.GetLabResultsRecords.prc
+**		File: dbo.GetLabResultsRecords8.sql
+**		Name: dbo.GetLabResultsRecords8.prc
 **		Desc: returns lab results records to Lab Results selection screen in PHOCIS for Nurse to prune the list to print.  Should hit Labware prod db
 **            If DemoID is 0 or not passed, report will get clinic by collection date instead. 1 Procedure for both options.
 *		Server: Dev: sqlmi-doh-lab-d.9841065d907c.database.windows.net,  *** Verify Test and Prod *** Test: sqlmi-doh-lab-t.9841065d907c.database.windows.net, Prod: sqlmi-doh-lab-p.9841065d907c.database.windows.net
@@ -29,7 +29,7 @@
 **	  01/22/2025	Tim Higdon		Changed to hit Labware8 and changed field names from x to t where required
 *******************************************************************************/
 
- CREATE OR ALTER Procedure [phocis].[GetLabResultsRecords] @DemographicsID int = 0, @ClinicID int, @ReportDate datetime,  @UseDateCreated bit = 0
+ CREATE OR ALTER Procedure [phocis].[GetLabResultsRecords8] @DemographicsID int = 0, @ClinicID int, @ReportDate datetime,  @UseDateCreated bit = 0
 	 AS
  
 DECLARE @chrDemographicsID varchar(20)
@@ -132,5 +132,5 @@ SET @chrDemographicsID = @DemographicsID
 GO
 GRANT EXECUTE
     ON OBJECT::[phocis].[GetLabResultsRecords8] TO [phocisapp]
-    AS [phocis];
+	GO
 
